@@ -101,10 +101,10 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
 	<!-- 出错页面定义 -->
 	
-	<!-- <error-page>
+	<error-page>
 		<error-code>404</error-code>
-		<location>/WEB-INF/error/404.jsp</location>
-	</error-page> -->
+		<location>/WEB-INF/error/404.html</location>
+	</error-page>
 	
 	
 	

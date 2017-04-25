@@ -14,7 +14,7 @@ public class LoginController {
         if (error != null) {
             return "login-failure";
         }
-        return "login";
+        return "newLogin";
     }
 	
 }
