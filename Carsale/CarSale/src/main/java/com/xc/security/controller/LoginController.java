@@ -1,5 +1,7 @@
 package com.xc.security.controller;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,5 +23,14 @@ public class LoginController {
 	public String register(){
 		return "register";
 	}
+	
+	//执行注册 (获取值)
+	@RequestMapping(value = "registerTo", method = RequestMethod.POST)
+	public String registerTo(@RequestParam String username,@RequestParam String password, HttpServletRequest request){
+		System.out.println(username);
+		System.out.println(password);
+		return "newLogin";
+	}
+	
 	
 }

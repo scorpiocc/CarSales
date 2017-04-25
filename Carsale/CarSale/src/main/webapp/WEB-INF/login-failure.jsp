@@ -8,5 +8,6 @@
 </head>
 <body>
 	登录失败
+	<a href="loginPage">重新登陆</a>
 </body>
 </html>
