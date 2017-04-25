@@ -8,6 +8,7 @@
 </head>
 <body>
 <%@ include file="header.jsp" %><br>
+<a href="register">注册一个新账号</a>
 登陆成功
 </body>
 </html>

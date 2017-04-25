@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     
-    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="shortcut icon" href="css/favicon.ico"> 
     <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
 
@@ -41,7 +41,7 @@
                 </div>
                 <button type="submit" name="submit" class="btn btn-primary block full-width m-b">登 录</button>
 
-                <p class="text-muted text-center"> <a href="login.html#"><small>忘记密码了？</small></a> | <a href="register.html">注册一个新账号</a>
+                <p class="text-muted text-center"> <a href="login.html#"><small>忘记密码了？</small></a> 
                 </p>
 
             </form>

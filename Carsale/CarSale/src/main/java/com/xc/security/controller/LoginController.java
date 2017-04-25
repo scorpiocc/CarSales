@@ -1,4 +1,4 @@
-package com.yin.myproject.security.controller;
+package com.xc.security.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class LoginController {
-	
+	//登陆界面  和登陆失败界面
 	@RequestMapping(value = "/loginPage", method = RequestMethod.GET)
     public String loginPage(@RequestParam(value = "error", required = false) String error, Model model) {
         if (error != null) {
@@ -16,5 +16,10 @@ public class LoginController {
         }
         return "newLogin";
     }
+	//跳转注册
+	@RequestMapping(value="/register")
+	public String register(){
+		return "register";
+	}
 	
 }
