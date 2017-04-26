@@ -26,7 +26,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 		<!-- 基本属性 url、user、password -->
 		<!-- -->
 		<beans:property name="url"
-			value="jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=UTF-8" />
+			value="jdbc:mysql://localhost:3306/car?useUnicode=true&amp;characterEncoding=UTF-8" />
 		<beans:property name="username" value="scorpio" />
 		<beans:property name="password" value="111111" />
 		<!-- 配置初始化大小、最小、最大 -->
