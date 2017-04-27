@@ -43,9 +43,6 @@
 				 <br/>  <br/>
                 <button type="submit" name="submit" class="btn btn-primary block full-width m-b">登 录</button>
 
-                	
-                
-
             </form>
         </div>
     </div>

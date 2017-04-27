@@ -2,12 +2,14 @@ package com.xc.ssm.service.impl;
 
 
 
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
 import com.xc.ssm.dao.UserMapper;
 import com.xc.ssm.entity.User;
 import com.xc.ssm.entity.UserSecurity;
-import com.xc.ssm.service.StudentService;
+import com.xc.ssm.service.UserService;
 
 /**
  * 注入方式一般有两种，一种是按类型注入：@Resource，还有一种按名称注入@Autowired
@@ -16,19 +18,21 @@ import com.xc.ssm.service.StudentService;
  *
  */
 @Service
-public class StudentServiceImpl implements StudentService{
+public class UserServiceImpl implements UserService{
 	private UserMapper userMapper;
+	@Resource
+	public void setUserMapper(UserMapper userMapper) {
+		this.userMapper = userMapper;
+	}
 
 	@Override
 	public int addUser(User user) {
-		// TODO Auto-generated method stub
-		return 0;
+		return userMapper.insert(user);
 	}
 
 	@Override
 	public int addUserQX(UserSecurity userSecurity) {
-		// TODO Auto-generated method stub
-		return 0;
+		return userMapper.insertQX(userSecurity);
 	}
 	
 	
