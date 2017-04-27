@@ -1,11 +1,12 @@
 package com.xc.ssm.service;
 
-import java.util.List;
-
 import com.xc.ssm.entity.User;
+import com.xc.ssm.entity.UserSecurity;
 
 public interface StudentService {
-	public List<User> queryAllStudent();
+	//增加用户
+	int addUser(User user);
+	//增加用户权限
+	int addUserQX(UserSecurity userSecurity);
 	
-	public User queryStudentBySid(int id);
 }

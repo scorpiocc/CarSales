@@ -39,10 +39,12 @@
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" placeholder="密码" required="">
                 </div>
+                <div style="float:left"> <input id="remember-me" name="remember-me" type="checkbox" checked="checked" />&nbsp&nbsp&nbsp自动登陆</div>
+				 <br/>  <br/>
                 <button type="submit" name="submit" class="btn btn-primary block full-width m-b">登 录</button>
 
-                <p class="text-muted text-center"> <a href="login.html#"><small>忘记密码了？</small></a> 
-                </p>
+                	
+                
 
             </form>
         </div>

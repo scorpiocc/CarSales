@@ -1,22 +1,14 @@
 package com.xc.ssm.dao;
 
-import java.util.List;
 
 import com.xc.ssm.entity.User;
+import com.xc.ssm.entity.UserSecurity;
 
 public interface UserMapper {
 
-    int deleteByPrimaryKey(Integer id);
-
     int insert(User record);
 
-    int insertSelective(User record);
+    int insertQX(UserSecurity record);
 
-    User selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(User record);
-
-    int updateByPrimaryKey(User record);
     
-    List<User> selectStudents();
 }
